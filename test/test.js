@@ -13,3 +13,9 @@ describe('First two terms', function() {
       assert.strictEqual(main.factorial(1), 1);
     });
 });
+
+describe('Undefined', function() {
+  it('should return "undefined" for a negative number', function() {
+      assert.strictEqual(main.factorial(-1), undefined);
+    });
+  });
