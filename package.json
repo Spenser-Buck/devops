@@ -9,6 +9,6 @@
   "author": "YOUR NAME",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "^8.2.1"
+    "mocha": "^10.8.2"
   }
 }
