@@ -1,14 +1,15 @@
+const { hasUncaughtExceptionCaptureCallback } = require('process');
 var main = require('../index');
 var assert = require('assert');
-describe('Regular fibonacci value', function() {
-    it('should return 5 for Fib(5)', function() {
-        assert.strictEqual(main.factorialize(5), 5);
+describe('Regular factorial value', function() {
+    it('should return 120 for factorial(5)', function() {
+        expect(factorial(5)).toBe(120)
       });
 });
 
 describe('First two terms', function() {
-  it('should return 0 and 1 for first two terms', function() {
-      assert.strictEqual(main.factorialize(0), 0);
-      assert.strictEqual(main.factorialize(1), 1);
+  it('should return 1 for first two terms', function() {
+      expect(factorial(0)).toBe(1)
+      expect(factorial(1)).toBe(1)
     });
 });
